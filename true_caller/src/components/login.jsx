@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ResponsiveAppBar from './navbar';
+import ThreeScene from './threedim';
 import './login.css'
 function Login(){
     const [contacts, setContacts] = useState({
@@ -46,6 +47,7 @@ function Login(){
   return (
     <div className="App">
       <ResponsiveAppBar />
+      
       <div className="container">
         <h1>Enter Details</h1>
         <div className="inputs">
@@ -84,6 +86,7 @@ function Login(){
         <ThreeScene/>
       </header>
     </div> */}
+    <ThreeScene/>
     </div>
   );
 }
