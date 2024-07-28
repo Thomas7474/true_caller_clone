@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import ResponsiveAppBar from './navbar';
 import './signup.css';
-function Signup(){
-    const [contacts, setContacts] = useState({
-    "John Doe": "1234567890",
-    "Jane Smith": "0987654321",
-    "Alice Johnson": "1111222233",
-  });
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
+
+function Signup(){
+
+  const navigate = useNavigate();
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const [email, setEmail] = useState('');

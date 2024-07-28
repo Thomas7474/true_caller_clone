@@ -3,10 +3,12 @@ import ResponsiveAppBar from './navbar';
 import ThreeScene from './threedim';
 import './login.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 
 function Login(){
-    const [contacts, setContacts] = useState({});
-
+  const [contacts, setContacts] = useState({});
+  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [searchResult, setSearchResult] = useState('');
@@ -40,7 +42,7 @@ function Login(){
 //     } else {
 //       alert('Contact not found');
 //     }
-//   };
+
      const submitHandler = async (e) => {
       e.preventDefault();
       axios.post( 'http://localhost:3000/routes/users/login', {
@@ -49,6 +51,7 @@ function Login(){
       .then(response => {
         // Handle the response data
         console.log('Post created:', response.data);
+        navigate('/search'); 
       })
       .catch(error => {
         // Handle errors
