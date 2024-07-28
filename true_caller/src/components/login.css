@@ -5,16 +5,17 @@
   text-align: center;
 }
 
-
 h1 {
-  color: #22a2b3;
+  color: #020819;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
 }
 
   .inputs{
     height: 100px;
    
     
-    
+
     justify-content: space-around;
     max-width: 1000px;
     margin-left: 30px;
@@ -30,6 +31,7 @@ h1 {
 .email_font{
   font-weight: bold;
   font-size: 30px;
+  font: white
 }
 
   .email{

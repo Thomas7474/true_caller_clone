@@ -27,20 +27,17 @@ function Search() {
   };
 
   return (
-    <div>
+
       <div className="blue_container">
        
         <div className="overlay_content1">
-          Get the details of the required number
-        </div>
-        <div className="overlay_content2">
-          Enter the number :
+          Find the User
         </div>
         <div>
           <input 
             className="overlay_box" 
             type="text" 
-            placeholder=" eg: +91 9446207175"
+            placeholder="Enter Phone Number"
             value={phonenumber}
             onChange={(e) => setNumber(e.target.value)}
           />
@@ -56,7 +53,7 @@ function Search() {
           />
         </div>
       </div>
-    </div>
+
   );
 }
 
