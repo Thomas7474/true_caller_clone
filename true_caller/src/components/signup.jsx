@@ -51,7 +51,7 @@ function Signup(){
     <div className="App">
       <ResponsiveAppBar/>
       <div className="containers">
-        <h1>Enter Details</h1>
+      <br /><br />  <h1>Enter Details</h1>
         <div className="input">
         <div>
         <label for="addname">Username : </label>

@@ -47,7 +47,7 @@ function Login(){
     <div className="App">
       <ResponsiveAppBar />
       <div className="container">
-        <h1>Enter Details</h1>
+       <br /><br /> <h1>Enter Details</h1>
         <div className="inputs">
         <div>
         <label for="addname">Email : </label>
