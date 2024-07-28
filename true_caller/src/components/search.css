@@ -1,0 +1,90 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+ }
+ .blue_container{
+ height: 100vh;
+ width: 100vw;
+ 
+ }
+ 
+ .overlay_box{
+     position: absolute;
+     top: 35%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: rgb(255, 255, 255);
+     background-color: rgba(79, 83, 80, 0.5); /* Semi-transparent background */
+     padding: 10px;
+     border-radius: 20px;
+     font-size: 1.5em;
+     text-align: center;
+     border: none;
+ }
+ 
+ .overlay_content1{
+     position: absolute;
+     top: 15%;
+     left: 48%;
+     transform: translate(-50%, -50%);
+     color: white;
+    
+     padding: 10px;
+     border-radius: 20px;
+     font-size: 1.5em;
+     text-align: center;
+     border: none;
+     font-size:50px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ 
+ .overlay_content2{
+     position: absolute;
+     top: 35%;
+     left: 33%;
+     transform: translate(-50%, -50%);
+     color: white;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+     padding: 10px;
+     border-radius: 20px;
+     font-size: 1.5em;
+     text-align: center;
+     border: none;
+ }
+ 
+ .search_btn{
+     position: absolute;
+     top: 35%;
+     left: 65%;
+     transform: translate(-50%, -50%);
+     color: rgb(227, 218, 218);
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(233, 10, 10);
+     padding: 10px;
+     border-radius: 50px;
+     font-size: 1.5em;
+     text-align: center;
+     border: none;
+ }
+ .search_btn:hover{
+     cursor: pointer;
+     background-color:rgb(183, 58, 58);
+ }
+ 
+ .overlay_output{
+     position: absolute;
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: rgb(255, 255, 255);
+     background-color: rgba(79, 83, 80, 0.5); /* Semi-transparent background */
+     padding: 10px;
+     border-radius: 20px;
+     font-size: 1.5em;
+     text-align: center;
+     border: none;
+     width: 500px;
+     height: 200px;
+ }

@@ -108,7 +108,9 @@ li{
     background-color: lightblue;
 }
 
-
+body{
+    overflow: scroll;
+}
 
 
 
