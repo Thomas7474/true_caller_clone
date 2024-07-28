@@ -99,7 +99,7 @@ function ResponsiveAppBar() {
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box   sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }} >
             <Link to="/">
               <Button
                 key={"Home"}
@@ -109,13 +109,16 @@ function ResponsiveAppBar() {
                 Home
               </Button>
             </Link>
-            <Button
+
+           <Link to="/#about">
+           <Button 
               key={"About"}
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
               About 
             </Button>
+           </Link>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>

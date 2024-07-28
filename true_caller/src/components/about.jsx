@@ -11,7 +11,7 @@ return(
   <br />
   <br />
   <center>
- <div className="about_content"id="about">
+ <div className="about_content" id="about">
  Welcome to Freecaller, your trusted companion for effortless communication. Our app is designed to help you identify unknown callers, block unwanted calls, and connect with people who matter. With a community-driven approach, Freecaller boasts a massive database of verified numbers, ensuring you always know who's calling.
 
 At Freecaller, privacy and security are our top priorities. We employ advanced technology to safeguard your information while providing a seamless user experience. Join millions of users worldwide who rely on Freecaller to enhance their calling experience, protect against spam, and stay connected with ease.

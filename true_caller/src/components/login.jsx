@@ -84,7 +84,7 @@ function Login(){
         </div>
         <div>
           {/* <button onClick={handleSearch}>Search</button> */}
-          <button onClick={submitHandler}>Submit</button>
+          <button onClick={submitHandler} className='login_submit_btn'>Submit</button>
         {/*<button onClick={handleDelete}>Delete</button>*/}
         </div>
         {/* {searchResult && (

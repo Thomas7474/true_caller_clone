@@ -113,6 +113,17 @@ body{
 }
 
 
+.login_submit_btn{
+
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: lightblue;
+}
+
+
 
 
 
