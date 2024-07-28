@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import ResponsiveAppBar from './navbar';
-import ThreeScene from './threedim';
-import './login.css'
+
+import './login.css';
+import axios from 'axios';
+
 function Login(){
     const [contacts, setContacts] = useState({
     "John Doe": "1234567890",
@@ -43,13 +45,26 @@ function Login(){
 //       alert('Contact not found');
 //     }
 //   };
-
+     const submitHandler = async (e) => {
+      e.preventDefault();
+      axios.post( 'http://localhost:3000/routes/users/login', {
+        email:email,password:password
+      })
+      .then(response => {
+        // Handle the response data
+        console.log('Post created:', response.data);
+      })
+      .catch(error => {
+        // Handle errors
+        console.error('Error creating post:', error);
+      });
+     }
   return (
     <div className="App">
       <ResponsiveAppBar />
       
       <div className="container">
-        <h1>Enter Details</h1>
+       <br /><br /> <h1>Enter Details</h1>
         <div className="inputs">
         <div>
         <label for="addname">Email : </label>
@@ -71,7 +86,7 @@ function Login(){
         </div>
         <div>
           {/* <button onClick={handleSearch}>Search</button> */}
-          <button>Submit</button>
+          <button onClick={submitHandler}>Submit</button>
         {/*<button onClick={handleDelete}>Delete</button>*/}
         </div>
         {/* {searchResult && (

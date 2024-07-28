@@ -19,7 +19,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import { Link } from "react-router-dom";
 
-const pages = ["Home", "About Us"];
+const pages = ["Home","About"];
 const settings = ["Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
@@ -110,11 +110,11 @@ function ResponsiveAppBar() {
               </Button>
             </Link>
             <Button
-              key={"About Us"}
+              key={"About"}
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              About Us
+              About 
             </Button>
           </Box>
 
