@@ -56,7 +56,7 @@ function Signup(){
         <div>
         <label for="addname">Username : </label>
           {/*<label>Add-Name : </label>*/}
-          <input className='name'
+          <input className='names'
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -64,7 +64,7 @@ function Signup(){
         </div>
         <div>
           <label>Password : </label>
-          <input className='password'
+          <input className='passwords'
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -72,7 +72,7 @@ function Signup(){
         </div>
         <div>
           <label>Email : </label>
-          <input className='email'
+          <input className='emails'
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -80,7 +80,7 @@ function Signup(){
         </div>
         <div>
           <label>Phone Number : </label>
-          <input className='number'
+          <input className='numbers'
             type="number"
             value={number}
             onChange={(e) => setNumber(e.target.value)}
