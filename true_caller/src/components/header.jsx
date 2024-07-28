@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img2 from "../images/logo.jpg"
 import About from "./about";
 
@@ -12,8 +13,8 @@ return(
          
       </ul>
 
-      <button className="login">Login</button>
-      <button className="sign_in"> Sign up
+      <button ><Link to="/login" className="login">Login</Link></button>
+      <button className="sign_in"> <Link to="/signup" >Sign Up</Link>
         </button>
     </nav>
     
