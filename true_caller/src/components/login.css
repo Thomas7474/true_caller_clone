@@ -1,60 +1,39 @@
 #root {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #f7ff64da);
-  }
-  .logo.react:hover {
-    filter: drop-shadow(0 0 2em #61fb78aa);
-  }
-  
-  @keyframes logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-      animation: logo-spin infinite 20s linear;
-    }
-  }
-  
-  .card {
-    padding: 2em;
-  }
-  
-  .read-the-docs {
-    color: #937676;
-  }
-  h1 {
-    color: #22a2b3;
-  }
-  
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10rem;
+  text-align: center;
+}
+
+
+h1 {
+  color: #22a2b3;
+}
+
   .inputs{
     height: 100px;
     display: flex;
     flex-direction: column;
     align-items:end;
+    margin-right: 20%;
     justify-content: space-around;
     width: 60%;
   }
   .email{
     height: 25px;
+    width: 500px;
   }
   .password{
     height: 25px;
+    width: 500px;
+  }
+  .container{
+    height: 40vh;
+    width: 80vw;
+    
+    margin-right: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:x-large;
   }

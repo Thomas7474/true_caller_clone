@@ -1,7 +1,5 @@
 // src/ThreeScene.js
-import React, { useRef,} from 'react';
-//import React, { useState } from 'react';
-
+import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Box } from '@react-three/drei';
 
@@ -14,8 +12,8 @@ const RotatingBox = () => {
     }
   });
   return (
-    <Box ref={ref}>
-      <meshStandardMaterial attach="material" color="green" />
+    <Box ref={ref} args={[3, 3, 3]}>  {/* Adjust args to make the box larger */}
+      <meshStandardMaterial attach="material" color="#a6d8f7" />
     </Box>
   );
 };

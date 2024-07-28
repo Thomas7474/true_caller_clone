@@ -14,10 +14,10 @@
     
 }
 a{
-    color:  grey;
+    
    text-decoration: none;
 }
-a:hover{
+.blackText{
     color: black;
 }
 
@@ -50,8 +50,12 @@ a:hover{
     margin-top: 25px;
     font-weight: bold;
     font-size: 25px;
+<<<<<<< HEAD
     
     color: aliceblue;
+=======
+    text-emphasis-color: rgb(255, 255, 255);
+>>>>>>> b6838a324c80dd5c7de1d52a239e1f111f641be8
 
 }
 .login:hover{
@@ -59,6 +63,12 @@ a:hover{
     background-color: rgb(208, 86, 53);
 }
 
+.coloured{
+    color: white;
+}
+.coloured:hover{
+    color: rgb(0, 0, 0);
+}
 .sign_in{
     height: 50px;
     width: 150px;

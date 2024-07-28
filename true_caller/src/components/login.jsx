@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import ResponsiveAppBar from './navbar';
+import ThreeScene from './threedim';
 import './login.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 
 function Login(){
-    const [contacts, setContacts] = useState({
-    "John Doe": "1234567890",
-    "Jane Smith": "0987654321",
-    "Alice Johnson": "1111222233",
-  });
-
+  const [contacts, setContacts] = useState({});
+  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [searchResult, setSearchResult] = useState('');
@@ -43,7 +42,7 @@ function Login(){
 //     } else {
 //       alert('Contact not found');
 //     }
-//   };
+
      const submitHandler = async (e) => {
       e.preventDefault();
       axios.post( 'http://localhost:3000/routes/users/login', {
@@ -52,6 +51,7 @@ function Login(){
       .then(response => {
         // Handle the response data
         console.log('Post created:', response.data);
+        navigate('/search'); 
       })
       .catch(error => {
         // Handle errors
@@ -61,6 +61,7 @@ function Login(){
   return (
     <div className="App">
       <ResponsiveAppBar />
+      
       <div className="container">
        <br /><br /> <h1>Enter Details</h1>
         <div className="inputs">
@@ -99,6 +100,7 @@ function Login(){
         <ThreeScene/>
       </header>
     </div> */}
+    <ThreeScene/>
     </div>
   );
 }
