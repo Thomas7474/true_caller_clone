@@ -6,8 +6,8 @@
     list-style: none;
     word-spacing: 100px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    gap: 200px;
-    margin-left: 200px;
+    gap: 150px;
+    margin-left: 10px;
     
   
     font-weight: bold;
@@ -27,9 +27,16 @@ a{
     margin: 0 auto;
     justify-content: space-between;
     display: absolute;
+    margin-left: ;
    
     
     
+}
+
+.navi_bar{
+    margin: 0 auto;
+    max-width: 800x;
+    margin-left: -50px;
 }
 
 
@@ -43,7 +50,12 @@ a{
     margin-top: 25px;
     font-weight: bold;
     font-size: 25px;
+<<<<<<< HEAD
+    
+    color: aliceblue;
+=======
     text-emphasis-color: rgb(255, 255, 255);
+>>>>>>> b6838a324c80dd5c7de1d52a239e1f111f641be8
 
 }
 .login:hover{
@@ -63,8 +75,8 @@ a{
     background: rgb(28, 135, 230);
     border-radius: 40px;
     border: none;
-   margin-right: -250px;
-   margin-left: -100px;
+  margin-right: -140px;
+   margin-left: -90px;
    margin-top: 25px;
    font-weight: bold;
    font-size: 25px;
@@ -79,7 +91,7 @@ a{
     height: 200px;
     width: 200px;
     margin-left: -150px;
-    margin-top: -40px;
+    margin-top: -80px;
    
 }
 li{
@@ -116,6 +128,38 @@ li{
 
 body{
     overflow: scroll;
+}
+
+
+.login_submit_btn{
+
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: lightblue;
+    padding: 10px;
+    font-weight: bold;
+}
+.login_submit_btn:hover{
+    cursor: pointer;
+    background-color: rgb(41, 177, 231);
+}
+
+.sign_in_btn{
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: lightblue;
+    padding: 10px;
+    font-weight: bold;
+}
+.sign_in_btn:hover{
+    cursor: pointer;
+    background-color: rgb(41, 177, 231);
 }
 
 
