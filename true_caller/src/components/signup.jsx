@@ -8,45 +8,27 @@ import { useNavigate } from 'react-router-dom';
 function Signup(){
 
   const navigate = useNavigate();
-  const [name, setName] = useState('');
-  const [number, setNumber] = useState('');
+  const [username, setName] = useState('');
+  const [phonenumber, setNumber] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [searchResult, setSearchResult] = useState('');
 
-  const handleSearch = () => {
-    if (contacts[name]) {
-      setSearchResult(contacts[name]);
-    } else {
-      setSearchResult('Contact not found');
-    }
-  };
-
-  const handleAdd = () => {
-    if (name && number) {
-      setContacts({ ...contacts, [name]: number });
-      alert('Contact added successfully');
-      setName('');
-      setNumber('');
-      setEmail('')
-      setPassword('')
-    } else {
-      alert('All fields are required');
-    }
-  };
-
-  const handleDelete = () => {
-    if (contacts[name]) {
-      const updatedContacts = { ...contacts };
-      delete updatedContacts[name];
-      setContacts(updatedContacts);
-      setSearchResult('');
-      alert('Contact deleted successfully');
-    } else {
-      alert('Contact not found');
-    }
-  };
-
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    axios.post( 'http://localhost:3000/routes/users/signup', {
+      email,password,phonenumber,username,
+    })
+    .then(response => {
+      // Handle the response data
+      console.log('Post created:', response.data);
+      navigate('/login'); 
+    })
+    .catch(error => {
+      // Handle errors
+      console.error('Error creating post:', error);
+    });
+   }
   return (
     <div className="App">
       <ResponsiveAppBar/>
@@ -54,11 +36,11 @@ function Signup(){
       <br /><br />  <h1>Enter Details</h1>
         <div className="input">
         <div>
-        <label for="addname">Username : </label>
+        <label htmlFor="addname">Username : </label>
           {/*<label>Add-Name : </label>*/}
           <input className='names'
             type="text"
-            value={name}
+            value={username}
             onChange={(e) => setName(e.target.value)}
           />
         </div>
@@ -81,15 +63,15 @@ function Signup(){
         <div>
           <label>Phone Number : </label>
           <input className='numbers'
-            type="number"
-            value={number}
+            type="text"
+            value={phonenumber}
             onChange={(e) => setNumber(e.target.value)}
           />
         </div>
         </div>
         <div>
           {/* <button onClick={handleSearch}>Search</button> */}
-          <button className='button'>Submit</button>
+          <button className='button' onClick={submitHandler}>Submit</button>
         {/*<button onClick={handleDelete}>Delete</button>*/}
         </div>
         {/* {searchResult && (

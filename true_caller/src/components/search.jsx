@@ -1,5 +1,7 @@
 import img3 from "../images/bg.jpeg"
 import "./search.css"
+import axios from 'axios';
+
 function Search(){
     return(
         <div>
