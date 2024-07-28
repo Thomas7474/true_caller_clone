@@ -17,6 +17,7 @@ router.post('/signup', async (req, res) => {
 
 router.post('/login', async (req, res) => {
     try {
+        console.log("request received")
         const { email, password } = req.body;
         const user = await User.findOne({ email });
 
@@ -48,7 +49,7 @@ router.post('/find', async (req, res) => {
         }
 
         res.status(200).send({ username: user.username });
-        
+
     } catch (error) {
         res.status(400).send({ error: error.message });
     }
