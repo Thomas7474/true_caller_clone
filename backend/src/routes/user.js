@@ -42,8 +42,9 @@ router.post('/login', async (req, res) => {
 router.post('/find', async (req, res) => {
     try {
         const { phonenumber } = req.body;
+        console.log(phonenumber)
         const user = await User.findOne({ phonenumber });
-        console.log(user.username)
+        console.log(user)
         if (!user) {
             return res.status(404).send({ message: 'User not found' });
         }
