@@ -5,11 +5,7 @@ import './login.css';
 import axios from 'axios';
 
 function Login(){
-    const [contacts, setContacts] = useState({
-    "John Doe": "1234567890",
-    "Jane Smith": "0987654321",
-    "Alice Johnson": "1111222233",
-  });
+    const [contacts, setContacts] = useState({});
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
