@@ -32,11 +32,13 @@ function Signup(){
   return (
     <div className="App">
       <ResponsiveAppBar/>
-      <div className="containers">
+      <div className="container_signup">
+
       <br /><br />  <h1>Enter Details</h1>
+
         <div className="input">
         <div>
-        <label htmlFor="addname">Username : </label>
+        <label htmlFor="addname"  className='username_font'>Username : </label>
           {/*<label>Add-Name : </label>*/}
           <input className='names'
             type="text"
@@ -45,7 +47,7 @@ function Signup(){
           />
         </div>
         <div>
-          <label>Password : </label>
+          <label className='password2_font'>Password : </label>
           <input className='passwords'
             type="password"
             value={password}
@@ -53,7 +55,7 @@ function Signup(){
           />
         </div>
         <div>
-          <label>Email : </label>
+          <label className='email2_font'>Email : </label>
           <input className='emails'
             type="email"
             value={email}
@@ -61,7 +63,7 @@ function Signup(){
           />
         </div>
         <div>
-          <label>Phone Number : </label>
+          <label className='ph_font'>Phone Number : </label>
           <input className='numbers'
             type="text"
             value={phonenumber}

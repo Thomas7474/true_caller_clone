@@ -2,11 +2,14 @@ body{
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+    background: linear-gradient(135deg, #0311cf, #02023c);
  }
  .blue_container{
- height: 100vh;
- width: 100vw;
- 
+ height: auto;
+ width: 100%;
+ border-radius: 20px;
+ margin-top: -60px;
+ background-color: linear-gradient(135deg, #1B8Af1, #B58DED);
  }
  
  .overlay_box{

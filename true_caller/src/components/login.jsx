@@ -61,11 +61,12 @@ function Login(){
     <div className="App">
       <ResponsiveAppBar />
       
-      <div className="container">
+      <div className="container_login">
        <br /><br /> <h1>Enter Details</h1>
         <div className="inputs">
-        <div>
-        <label for="addname">Email : </label>
+
+        <div className='email_box'>
+        <label for="addname"  className='email_font'>Email : </label>
           {/*<label>Add-Name : </label>*/}
           <input className='email'
             type="email"
@@ -73,8 +74,9 @@ function Login(){
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <div>
-          <label>Password : </label>
+
+        <div className='password_box'>
+          <label className='password_font'>Password : </label>
           <input className='password'
             type="password"
             value={password}
@@ -84,7 +86,7 @@ function Login(){
         </div>
         <div>
           {/* <button onClick={handleSearch}>Search</button> */}
-          <button onClick={submitHandler}>Submit</button>
+          <button onClick={submitHandler} className='login_submit_btn'>Submit</button>
         {/*<button onClick={handleDelete}>Delete</button>*/}
         </div>
         {/* {searchResult && (

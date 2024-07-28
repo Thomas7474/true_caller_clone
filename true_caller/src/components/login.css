@@ -12,21 +12,52 @@ h1 {
 
   .inputs{
     height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items:end;
-    margin-right: 20%;
+   
+    
+    
     justify-content: space-around;
-    width: 60%;
+    max-width: 1000px;
+    margin-left: 30px;
+    padding: 20px;
+
   }
+
+  .email_box{
+  padding-left: 40px;
+  margin-left: 100px;
+  padding-bottom: 20px;
+  }
+.email_font{
+  font-weight: bold;
+  font-size: 30px;
+}
+
   .email{
-    height: 25px;
+    height: 40px;
     width: 500px;
+    border-radius: 10px;
+   
+   
+  }
+
+  .password_box{
+    margin-left: 100px;
+  }
+
+  .password_font{
+    font-weight: bold;
+  font-size: 30px;
   }
   .password{
-    height: 25px;
+    height: 40px;
     width: 500px;
+    border-radius: 10px;
   }
+.login_submit_btn{
+  font-size: 40px;
+  border-radius: 30px;
+}
+
   .container{
     height: 40vh;
     width: 80vw;
@@ -37,3 +68,15 @@ h1 {
     align-items: center;
     font-size:x-large;
   }
+
+  .container_login{
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 2px 2px #007bff;
+    border-radius: 20px;
+    padding: 20px;
+   
+  }
+
+  
+  
+  

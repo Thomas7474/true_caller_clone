@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import img3 from "../images/bg.jpeg";
+
 import "./search.css";
 
 function Search() {
@@ -29,7 +29,7 @@ function Search() {
   return (
     <div>
       <div className="blue_container">
-        <img src={img3} className="blue_container" alt="Background" />
+       
         <div className="overlay_content1">
           Get the details of the required number
         </div>
