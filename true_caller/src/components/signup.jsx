@@ -89,7 +89,7 @@ function Signup(){
         </div>
         <div>
           {/* <button onClick={handleSearch}>Search</button> */}
-          <button className='button'>Submit</button>
+          <button className='sign_in_btn'>Submit</button>
         {/*<button onClick={handleDelete}>Delete</button>*/}
         </div>
         {/* {searchResult && (
